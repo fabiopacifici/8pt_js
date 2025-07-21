@@ -145,3 +145,161 @@ function is_palindrom(word) {
   return false
 
 }
+
+
+
+// Function Scope
+
+
+//const userName = 'Mario'
+
+
+/* function greetUser(name){
+
+  const userName = 'Fabio'
+  // Wrong ❌
+  console.log(userName);
+
+  // Function scope
+  const message = 'This is a message'
+
+  console.log(message); // ✅ 'This is a message'
+  
+  return `ciao ${name}`
+} */
+
+//console.log(message); // Reference error
+
+// argument passed to the function call
+/* greetUser('Mario')
+
+const userName = 'Mario'
+greetUser(userName) */
+/* 
+
+
+const greet = () =>{
+
+}
+ */
+
+
+/* 
+function calcAge(){
+    const firstName = 'Fabio'
+    var age = 45
+    let job = 'teacher'
+
+
+  console.log(firstName);
+  console.log(age);
+  console.log(job);
+}
+
+calcAge() */
+//console.log(firstName);
+//console.log(age);
+//console.log(job);
+
+
+
+
+
+/* if(10 > 100) {
+  // block scope
+} 
+
+
+for (let index = 0; index < array.length; index++) {
+  const element = array[index];
+  
+  // block scope
+
+}
+
+const is_playing = fale
+while (is_playing) {
+  // block scope
+}
+ */
+
+
+
+
+// Function + block scope
+
+function calcAge(){
+  // local scope (function scope)
+  const now = new Date()
+  
+  if(10 > 5){
+    console.log(now);
+
+    const thisVariable = 'Ciao'
+    console.log(thisVariable);    
+  }
+  console.log(thisVariable); // reference error
+  console.log(now);
+  
+  for (let i = 0; i < 10; i++){
+    console.log(i);
+    
+
+  }
+
+  console.log(i); // reference error
+  
+
+}
+
+
+
+
+function calcAge(yob){
+
+
+}
+
+
+
+/*  */
+for (let index = 0; index < 10; index++) {
+  console.log(index);
+}
+
+
+// 9 < 10 ? true => log
+// 10 < 10 ? false
+
+//index = 10
+
+
+/* if (index === 10) {
+  console.log(index);
+}
+ */
+
+
+
+// global variables
+a = 0;
+b = "buongiorno"
+var c = "ciao";
+
+saluta();
+
+console.log("a is " + a); // a is 0
+console.log("b is " + b); // b is buongiorno
+
+function saluta() {
+  var d = "asd";
+  console.log("a is " + a); // a is 0
+  var b = a + 1;
+  console.log("b is " + b); // b is 1
+  console.log(c); // ciao
+}
+// a is 0
+// b is 1
+// ciao
+// a is 0
+// b is buongiorno
