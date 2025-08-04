@@ -88,7 +88,7 @@ const students_2 = [
     classroom: '4A'
   },
   {
-	  id: 3
+	  id: 3,
     name: 'Luigi Banzi',
     age: 33,
     classroom: '5B'
